@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSCE 206 Labs: Others Resources</title>
+	<link rel="stylesheet" type="text/css" href="layout.css">
+</head>
+<body data-gr-c-s-loaded="true">
+	<p>
+		<a href="index.html">Lab Home</a> | <a href="Resources.html">Lab Resources</a>
+	</p>
+	<hr>
+	<h1 style="font-size:16.0pt">CSCE 206 Labs: Others Resources</h1>
+	<hr>
+
+	<p class="block">
+		Note: All URL's that start with wiki.cse.tamu.edu require you to be inside the Computer Science Department firewall either physically (in the CS labs or offices in HRBB/RDMC/RICH) or over VPN. <br>
+		All URL's that start with csnet.cs.tamu.edu require you to be inside the TAMU firewall. If you are not inside the appropriate firewall, the URLs will NOT resolve and you will get a "Page Not Found" or other  error. <br>
+		Please start by following the VPN setup instructions below. 
+	</p>
+
+	<ul>
+		<li><h3> CSE Department Wiki </h3>
+			<p>The CSE department Wiki, has a wealth of information regarding the various resources available to students. This guide can be accessed here : <a href="https://wiki.cse.tamu.edu/index.php/Main_Page" target="_bank">CS_Wiki</a>. <br>
+			Note: You will need to be inside the CSE network either physically or via VPN to be able to access all of the WIKI contents. If you are outside the firewall, the WIKI will point you to getting setup with VPN.</p>
+
+		</li><li><h3> VPN Access for OFF CAMPUS</h3></li>
+		<p>The CSE department network is protected by a firewall that blocks access from machines that are not connected through TAMU VPN. TAMU VPN connection will tunnel through the firewall and let you access CSE departmental unix, web and other computing resources when you are off-campus.</p>
+		<p> Detailed Instructions to set up the TAMU-VPN connection can be found here :<a href="http://it.tamu.edu/Network_and_Internet_Access/Virtual_Private_Networks/Virtual_Private_Network_VPN/index.php" target="_bank">TAMU VPN</a></p>
+
+		<li> <h3> PuTTY - Free Telnet/SSH Client for Win32 machines.</h3> </li>
+		<p> Homepage: <a href="http://www.chiark.greenend.org.uk/~sgtatham/putty/" target="_bank">http://www.chiark.greenend.org.uk/~sgtatham/putty/</a> </p>
+
+		<li> <h3> Mapping your H: Drive in Windows </h3> </li>
+		<p> All students enrolled in CSE Courses get access to online storage space for their use. This appears as your H: drive in the computers in the labs in the HRBB/RDMC/RICH buildings. 
+		If you wish to Map your H: drive to your personal machine (or if the H: is missing on the lab computer that you logged into), follow the instructions here.<br>
+		<b>Windows:</b> <a href="https://wiki.cse.tamu.edu/index.php/Mapping_Your_CSE_H:_Drive_In_Win_8" target="_bank">Mapping your CSE H: Drive</a><br>
+		<b>MacOS:</b> <a href="https://wiki.cse.tamu.edu/index.php/Mount_Your_Home_Directory_with_Mac_OSX" target="_bank">Mapping your CSE H: Drive</a><br><br>
+		<b>NOTE:</b>Windows 8/10 users, you will have to use "This PC" instead of "My Computer" in above instructions link.<br></p>
+
+		<li><h3>Text Editors</h3></li>
+		<p> A good text editor can considerably improve your experience in writing programs. I would recommend that you use a text editor designed to help write programs for your assignment rather than the default Notepad that ships with all flavors of Windows. Using a good editor will make programming easier and help debug quicker.</p>
+		<p>The Unix/Linux servers have a couple of editors available and installed by default including <a href="http://www.vim.org/index.php" target="_bank">Vi/Vim</a> , <a href="http://www.cs.colostate.edu/helpdocs/emacs.html" target="_bank">Emacs</a>, <a href="http://www.nano-editor.org/" target="_bank">nano</a> and <a href="http://www.uic.edu/depts/accc/software/pine/pico.html" target="_bank">pico.</a> </p>
+		<p> For Windows, there are many options, some of which are listed below (in no specific order)</p>
+
+		<ul>
+			<li> <a href="http://notepad-plus.sourceforge.net/uk/site.htm" target="_bank">Notepad++</a></li>
+			<li> <a href="http://www.pspad.com/en/" target="_bank">PSPad</a></li>
+			<li> <a href="http://www.editpadpro.com/editpadlite.html" target="_bank">EditPad</a></li>
+			<li> <a href="http://www.crimsoneditor.com/" target="_bank">Crimson Editor</a> </li>
+			<li> <a href="http://www.microsoft.com/Express/vc/" target="_bank">The Visual C++ IDE </a>from Microsoft also makes for a decent editor.</li>
+		</ul>
+		<p> There is no specific best editor - it is a matter of personal preference and what you like. I use Crimson Editor as my editor of choice on my machines for the reason that it was the editor I first encountered, and I now know my way around most of its features. Notepad++, PSPad and Visual Studio are available on the lab machines for use. </p>
+
+		<li><h3>Remote File access</h3></li>
+		<p> You can access your files on your H: remotely without VPN by using a SFTP client such as <a href="http://winscp.net/eng/download.php" target="_bank">WinSCP</a> (use version 4.1.9 or later, not the beta) or  <a href="http://filezilla-project.org/" target="_bank">FileZilla</a> (download the 'client') to connect to <code>sun.cs.tamu.edu</code> over SSH (Port 22).</p>
+
+		<li><h3>Compiling on your own computers</h3></li>
+		<p> If you wish to be able to write and test code on your own machines without having to log into to the Unix servers, you can do so. </p>
+		<p><i>To ensure fair grading, all code <b>must</b> be shown and verified to work on the <code>unix.cs</code> or <code>linux.cs</code> servers. </i></p>
+		<p>Windows Operating System</p>
+
+		<ul>
+			<li><a href="http://www.cygwin.com/" target="_bank">Cygwin</a> is an option. It will install a Linux-line exviromnent for windows including most of the tools available for use. This can include the gcc/g++ compiler set. This will give you the closest feel to running linux on your windows machine. However, its installation can be a bit tricky. See its website for details</li>
+
+			<li><a href="http://www.microsoft.com/Express/vc/" target="_bank">Visual C++ Express </a>from Microsoft. While targetted mainly at Visual C++, this should be able to run most of the programs that we will be writing for this class. The IDE (Integrated Developer Environment) is good. </li>
+
+			<li><a href="http://www.mingw.org/" target="_bank">MinGW</a> is a port of the GNU Compiler Collection for the Windows platform.</li>
+		</ul>
+		
+		<p> Apple Macintosh Operating System</p><ul>
+			<li> <a href="http://developer.apple.com/mac/" target="_bank">XCODE </a>development tools are probably the easiest way to go about getting the compilers on your Mac. It includes a good IDE (Integrated Developer Environment) which has a good text editor also.
+			</li>
+		</ul>
+
+		<p>Any Linux Operating	System</p><ul>
+			<li> All flavors of Linux distributions including (but not limited to) Fedora, Debian, Ubuntu, RedHat, CentOS and Slackware come with complete compiler/development packages that contain the GCC toolchains. The distributions's website should be able to tell you what version/package you need to get a working build environment
+			</li>
+		</ul>
+	</ul>
+	<hr>
+	<p>
+		<a href="http://students.cse.tamu.edu/zhuziwei/2017fall/CSCE206/instructions/other_resources.html">Page References</a>
+	</p>
+</body>
+</html>

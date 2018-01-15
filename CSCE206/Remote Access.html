@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSCE 206 Labs: Remote Access</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="keywords" content="CPSC 206,csce 206, Structured Programming C ">
+  <link rel="stylesheet" type="text/css" href="layout.css">
+</head>
+<body>
+	<p>
+		<a href="index.html">Lab Home</a> | <a href="Resources.html">Lab Resources</a>
+	</p>
+	<hr>
+	<h1 style="font-size:16.0pt">CSCE 206 Labs: Remote access to CSE servers from outside the labs</h1>
+	<hr>
+
+	<p class="block">
+		Note: All URLs that start with wiki.cse.tamu.edu or csnet.cse.tamu.edu require you to be inside the Computer Science Department firewall either physically (in the CS labs or offices in HRBB/RDMC/RICH) or over VPN.<br>
+		If you are not inside the firewall, the URLs will NOT resolve and you will get a "Page Not Found" or other  error. Please start by following the VPN setup instructions on the <a href="Resources.html">Resources</a> page.
+	</p>
+
+	<h2>Acccessing the sun.cse.tamu.edu server </h2>
+	<ul>
+		<li><h3>Windows</h3></li>
+		<ol>
+			<li>Obtain a copy of PuTTy from <a href="http://www.chiark.greenend.org.uk/~sgtatham/putty/" target="_bank">here</a>. (Download the putty.exe file and store it in a known folder). </li>
+			<li>Open PuTTy, for hostname type in sun.cse.tamu.edu or unix.cse.tamu.edu , PORT = 22. (You can save this information by adding a name to the 'saved sessions' box and clicking Save)</li>
+			<li>Once you get the login screen, use your CSE account credentials to login.</li>
+			<li>At this point, the process of using this terminal is the same as what you followed in the labs.</li>
+			<li>To exit, close the window, or type in <code>exit</code> at the command prompt to end the session.</li>
+			<li> Graphical instructions are available here : <a href="https://wiki.cse.tamu.edu/index.php/Logging_into_UNIX_from_PuTTY" target="_bank">UNIX_from_PuTTy</a></li>
+		</ol>
+
+		<li><h3>Mac &amp; Linux</h3></li>
+		<ol>
+			<li>Open "terminal"</li>
+			<li>Type in <code>ssh -l username sun.cse.tamu.edu</code> where username is the username you use to login to the CSE lab computers.</li>
+			<li>Once you get the login screen, use your CSE account credentials to login.</li>
+			<li>At this point, the process of using this terminal is the same as what you followed in the labs.</li>
+			<li>To exit, close the window, or type in <code>exit</code> at the command prompt to end the session. This will bring you back to your local user account on your Mac</li>
+			<li>To exit terminal, type in exit once more to close the window.</li>
+		</ol>
+
+		<li>Note:</li>
+		<ul>
+			<li>SSH connections require approximately equal bandwidth in both directions (Upload/Download). If you are on a slow connection (such as dial-up or satellite (has slow upload speed) ) 
+			expect the session to be slow and take time to respond</li>
+		</ul>
+	</ul>
+
+	<h2>Accessing your H: from outside the labs</h2>
+	<h3>Option-1 (Preferred): Map your H: to your local machine </h3>
+	<ul>
+		<li> This method requires a working VPN connection </li>
+		<li> If you haven't configured VPN as yet, please follow the instructions given on the <a href="http://it.tamu.edu/Network_and_Internet_Access/Virtual_Private_Networks/Virtual_Private_Network_VPN/index.php" target="_bank">TAMU VPN</a> page</li>
+		<b> Windows/Mac/Linux - First establish/Open a VPN connection</b>
+		<ul>
+			<li>
+				<h4>Windows:</h4> <a href="https://wiki.cse.tamu.edu/index.php/Mapping_your_CSE_H:_Drive" target="_bank">Mapping your CSE H: Drive in Windows</a>
+			</li>
+			<li>
+				<h4>Mac</h4>
+			</li>
+			<ol>
+				<li>In the Finder, click on the Go menu, select Connect to Server.</li>
+				<li>Enter the address as <code>smb://filer.cse.tamu.edu/ugrads/#/username</code>, where #: first letter of username and  username is your CSE account username.</li>
+				<li>Enter your CSE password when prompted, and click OK/Finish</li>
+				<li>A new icon should appear on the desktop. That is your mapped network drive.</li>
+			</ol>
+			<li>
+				<h4>Linux</h4>
+			</li>
+			<ol>
+				<li>Connect to Server using SFTP to username@sun.cse.tamu.edu </li>
+				<li>Enter your CSE password when prompted.</li>
+				<li>Navigate to <code>/home/ugrads/#/username </code>, where #: first letter of username and  username is your CSE account username(For eg: if your username is 'test' and you are an undergraduate student, the path is <code>/home/ugrads/t/test</code>. This is your home drive.</li>
+			</ol>
+		</ul>
+	</ul>
+
+	<h3>Option-2 : Use an SFTP Client</h3>
+	<ol>
+		<li>This is the fastest way to get access</li>
+		<li>Windows - Obtain an SFTP client such as <a href="http://winscp.net/eng/download.php" target="_bank">WinSCP</a> or <a href="http://filezilla-project.org/download.php" target="_bank">FileZilla</a></li>
+		<li>Mac try Cyberduck, Linux - You already have SFTP support built into the OS.</li>
+		<li>Follow the built-in prompts to configure an new account. The information you may need is given below:</li>
+			<ul>
+				<li>Sever/Host/Hostname : sun.cse.tamu.edu</li>
+				<li>Protocol: SFTP</li>
+				<li>Username: Your CSE account username</li>
+				<li>Domain (If required) : <b>AUTH</b> 
+				</li><li>Password: Your CSE password</li>
+			</ul>
+	</ol>
+	<hr>
+
+	<a href="http://students.cse.tamu.edu/zhuziwei/2017fall/CSCE206/instructions/remote%20access%20outside%20lab.html">Page references</a>
+</body>
+</html>
