@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>CSCE 206 Labs: Resources</title>
+	<link rel="stylesheet" type="text/css" href="layout.css">
 </head>
 <body>
 	<p>
@@ -14,9 +15,9 @@
 	<hr>
 	<div>
 		<ul>
-			<li><a href="Remote Access.html">Remote Access Outside the Labs</a></li>
-			<li><a href="Others.html">Other Resources</a></li>
-			<li>Recommend Learning:</li>
+			<li><a href="Remote Access.html"><b>Remote Access Outside the Labs</b></a></li>
+			<li><a href="Others.html"><b>Other Resources</b></a></li>
+			<li><b>Recommend Learning:</b></li>
 			Video Tutorials:
 			<ol>
 				<li><p><a href="https://youtu.be/HEjPop-aK_w">Intro to Computer Architecture</a> (4 minutes)</p></li>
@@ -36,13 +37,71 @@
 				<p>
 					Learn to use operate on a string type.
 				</p>
-			</ol>	
+			</ol>
+			Common Mistakes:
+			<ol>
+				<li>main() function type.</li>
+				<b style="color: blue">Correct:</b>
+				<pre>
+				int main()
+				{
+					......;
+
+					return 0;
+				}
+
+				void main()
+				{
+					......;
+				}
+				</pre>
+				<b style="color: red">Incorrect:</b>
+				<pre>
+				main()
+				{
+					......;
+				}
+				</pre>
+
+				<li>Initialize a variable.</li>
+				<p style="color: blue">
+					int, float, double, these variables are required to have initialization before using it. <a href="https://en.wikibooks.org/wiki/C_Programming/Variables">More.</a>
+				</p>
+				<b style="color: blue">Correct:</b>
+				<pre>
+				double sum=0;
+				int n=0;
+				sum += 10;
+				if(n != 0)
+				{
+					......;
+				}
+				else
+				{
+					......;
+				}
+				</pre>
+				<b style="color: red">Incorrect:</b>
+				<pre>
+				double sum;
+				int n;
+				sum += 10;
+				if(n != 0)
+				{
+					......;
+				}
+				else
+				{
+					......;
+				}
+				</pre>
+			</ol>
 		</ul>
 	</div>
 	<br>
 	<div>
 		<p>
-			Last update: Mar 17, 2018.
+			Last update: Mar 18, 2018.
 		</p>
 	</div>
 </body>
